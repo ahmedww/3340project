@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <b>UltraBlue</b> Medical Clinic</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#Medical Staff" class="w3-bar-item w3-button">Medical Staff</a>
+      <a href ="https://myweb.cs.uwindsor.ca:2222/CMD_FILE_MANAGER/domains/youssou1.myweb.cs.uwindsor.ca/public_html/60334/project/html/login.php" class="we-bar-item w3-button">Login</a>
+      <a href="#Home" class="we-bar-item w3-button">Home</a>
+      <a href="#Register" class="w3-bar-item w3-button">Register</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- Home Section -->
+  <div class="w3-container w3-padding-32" id="Home">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Home</h3>
+  </div>
+   <div>
+    <p><img style=" padding:0 10px; float: right;" "width:900" height="80" src="pictures/medicalimage.jpg"></p>
+   </div>
+   <div>
+    <p><b> Welcome to UltraBlue Medical Center</b></p>
+   </div>
+
+  </div>
+
+  <!-- Urgent Care -->
+  <div class="w3-container w3-padding-32" id="Medical Staff">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Medical Staff</h3>
+  
+  </div>
+
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <h3>Dr Bilaal</h3>
+      <p class="w3-opacity">Cardiologist</p>
+      <p></p>
+    </div>
+
+
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <h3>Dr Melissa</h3>
+      <p class="w3-opacity">Cardiothoracic Surgeon</p>
+      <p></p>
+    </div>
+
+
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <h3>Dr Ross</h3>
+      <p class="w3-opacity">Neurologist</p>
+      <p>
+    </div>
+
+
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <h3>Dr Tyler</h3>
+      <p class="w3-opacity">Neurosurgeon</p>
+      <p></p>
+    </div>
+  </div>
+
+
+  <!-- Patient Registration -->
+  <div class="w3-container w3-padding-32" id="Register">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Register</h3>
+    <p>Please fill out the following form to register</p>
+
+ <form action="html/insert.php" method="POST">
+  <table>
+   <tr>
+    <td>Name :</td>
+    <td><input type="text" name="username" required></td>
+   </tr>
+   <tr>
+    <td>Password :</td>
+    <td><input type="password" name="password" required></td>
+   </tr>
+   <tr>
+    <td>Gender :</td>
+    <td>
+     <input type="radio" name="gender" value="m" required>Male
+     <input type="radio" name="gender" value="f" required>Female
+    </td>
+   </tr>
+   <tr>
+    <td>Email :</td>
+    <td><input type="email" name="email" required></td>
+   </tr> 
+   <tr>
+    <td>Phone no :</td>
+    <td>
+     <select name="phoneCode" required>
+      <option selected hidden value="">Select Code</option>
+      <option value="977">977</option>
+      <option value="978">978</option>
+      <option value="979">979</option>
+      <option value="973">973</option>
+      <option value="972">972</option>
+      <option value="974">974</option>
+     </select>
+     <input type="phone" name="phone" required>
+    </td>
+   </tr>
+   <tr>
+    <td><input type="submit" value="Submit"></td>
+   </tr>
+  </table>
+ </form>
+
+ 
+<!-- End page content -->
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  
+</footer>
+
+</body>
+</html>
